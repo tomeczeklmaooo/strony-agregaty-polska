@@ -7,7 +7,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Mono:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 	<title>Kompensatory aktywne</title>
 </head>
 <body>
@@ -28,16 +27,68 @@
 	<!-- BEGIN MAIN SECTION -->
 	<main>
 		<section id="moc-bierna">
-			<!--  -->
+			<div class="section-inner">
+				<h1>Czym jest <span class="underline">moc bierna</span></h1>
+				<p>Każde urządzenie pobierając moc czynną, jednocześnie pobiera także <strong>moc bierną</strong>, która może mieć charakter indukcyjny lub pojemnościowy. Moc bierna nie bierze bezpośredniego udziału w wykonywanej pracy i jest swego rodzaju odpadem energetycznym.</p>
+				<p><strong>Moc bierna indukcyjna</strong> występuje przy pracy takich urządzeń jak wentylatory, silniki technologiczne, lampy wyładowcze, bez falownikowe generatory wody lodowej czy sprężarki powietrza.</p>
+				<p>W ostatnich latach jednak struktura odbiorników energii elektrycznej uegła zmianie, a coraz więcej nowoczesnych urządzeń generuje <strong>moc bierną pojemnościową</strong>. Dotyczy to przede wszystkim sprzętu wyposażonego w zasilacze impulsowe, bazujące na układach prostownikowych i kondensatorowych. Przykładami takich odbiorników są klimatyzacje inwerterowe (falownikowe), pompy ciepła, zasilacze komputerowe i awaryjne UPS oraz oświetlenie LED.</p>
+				<p>Zarówno moc czynna, jak i moc bierna przepływa przez licznik operatora i jest przez niego zliczana. Bilans mocy biernej mierzony przez licznik zależy od charakterystyki wszystkich odbiorników podłączonych do instalacji odbiorcy i wyraża stosunek generowanej mocy biernej do pobieranej mocy czynnej.</p>
+			</div>
 		</section>
+		
 		<section id="kompensacja-aktywna">
-			<!--  -->
+			<div class="section-inner">
+				<h1><span class="underline">Kompensacja</span> aktywna</h1>
+				<!-- <div>
+					<img src="assets/kompensator_30kvar.png" alt="Kompensator aktywny mocy biernej Agregaty Polska 30kVar">
+					tekst
+				</div> -->
+				<p>Intensywnie rozwijane są urządzenia zwane <strong>aktywnymi generatorami mocy biernej</strong>, potocznie nazywane <strong>aktywnymi kompensatorami mocy biernej</strong>. Mimo dużej podaży tego typu urządzeń na rynku ich właściwy dobór oraz zapewnienie prawidłowej pracy w celu eliminacji wysokich kar i opłat wymaga odpowiednich działań i zaawansowanej analizy, którą powinny przeprowadzać osoby posiadające odpowiednie kwalifikacje i doświadczenie.</p>
+				<p><strong>Aktywny kompensator mocy biernej</strong> działa na zasadzie szybkiej analizy parametrów sieci i generowania odpowiedniego sygnału kompensacyjnego. Kompensator na bieżąco monitoruje przepływ energii biernej w sieci. Jeśli wykryje obecność mocy biernej, natychmiast generuje prąd o przeciwnej fazie, co skutecznie ją kompensuje. Urządzenie działa dynamicznie &ndash; eliminuje nadmiarową moc bierną bez opóźnień. W odróżnieniu od pasywnych rozwiązań (np. baterii kondensatorów), nie powoduje przełączeń skokowych i wahań napięcia.</p>
+			</div>
 		</section>
+		
 		<section id="bezpieczenstwo">
-			<!--  -->
+			<div class="section-inner">
+				<h1><span class="underline">Bezpieczeństwo</span></h1>
+				<p>Mimo że zasada działania urządzenia jest prosta, właściwy dobór kompensatora oraz kluczowych elementów, takich jak obliczenia i dobór przekładników, zabezpieczeń, przewodów czy lokalizacja urządzenia, wymaga doświadczenia oraz wysokich kwalifikacji projektowych.</p>
+				<p>Ze względu na fakt, że urządzenie jest systemem energoelektronicznym generującym wysokie prądy, niewłaściwe zaprojektowanie jego elementów towarzyszących może prowadzić do nieprawidłowego funkcjonowania, a w skrajnych przypadkach &ndash; do porażenia prądem lub pożaru. Złożoność prac związanych z montażem kompensatora ilustruje zestawienie obejmujące analizy, prace projektowe oraz montażowe.</p>
+			</div>
 		</section>
+
 		<section id="kontakt">
-			<!--  -->
+			<div class="section-inner">
+				<h1>Napisz do nas</h1>
+				<div class="wrapper">
+					<div class="left">
+						<form method="post">
+							<input type="text" name="imie-nazwisko" id="imie-nazwisko" placeholder="Imię i nazwisko (opcjonalnie)">
+							<input type="email" name="email" id="email" placeholder="Email*" required>
+							<input type="tel" name="telefon" id="telefon" placeholder="Telefon (opcjonalnie)">
+							<textarea name="wiadomosc" id="wiadomosc" rows="6" placeholder="Wiadomość*" required></textarea>
+							<div class="checkbox">
+								<div class="checkbox-wrapper-46 checkbox">
+									<input required name="rodo" type="checkbox" id="cbx-46" class="inp-cbx" />
+									<label for="cbx-46" class="cbx">
+									<span>
+										<svg viewBox="0 0 12 10" height="10px" width="12px">
+										<polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span>
+										<span></span>
+									</label>
+								</div>
+								<label for="rodo">Wypełniając formularz kontaktowy, godzę się na przetwarzanie moich danych osobowych i kontaktowych na warunkach i zasadach zgodnych z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. tzw. RODO.*</label>
+							</div>
+							<input type="submit" value="Wyślij wiadomość">
+						</form>
+					</div>
+					<div class="right">
+						<iframe 
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.7383445561063!2d16.9056257772013!3d52.44765447204233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470443439d70c4e5%3A0x9ca81d64cebec069!2sObornicka%20258A%2C%2060-693%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1740862485753!5m2!1spl!2spl" 
+							class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 	<!-- END MAIN SECTION -->
@@ -85,5 +136,12 @@
 		</div>
 	</footer>
 	<!-- END FOOTER SECTION -->
+
+	<script>
+		function scroll_to_section(selector)
+		{
+			document.querySelector(selector).scrollIntoView(true);
+		}
+	</script>
 </body>
 </html>
