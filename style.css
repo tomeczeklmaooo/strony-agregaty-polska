@@ -227,8 +227,14 @@ section:nth-child(odd)
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	width: 50%;
 	box-sizing: border-box;
+}
+
+.section-inner .wrapper .left img
+{
+	width: 100%;
 }
 
 .section-inner .wrapper .left form
