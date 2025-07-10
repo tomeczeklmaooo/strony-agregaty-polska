@@ -14,7 +14,7 @@
 	<header>
 		<img src="assets/logo.png" alt="Agregaty Polska" class="logo">
 
-		<div class="hamburger" onclick="toggle_menu()">
+		<div class="hamburger">
 			☰
 		</div>
 
@@ -186,11 +186,10 @@
 			document.querySelector(selector).scrollIntoView(true);
 		}
 
-		function toggle_menu()
-		{
+		document.querySelector('.hamburger').addEventListener('click', function () {
 			const nav = document.querySelector('#nav-menu');
 			nav.classList.toggle('show');
-		}
+		});
 	</script>
 </body>
 </html>

@@ -86,7 +86,6 @@ header
 	top: 0;
 	z-index: 10;
 	position: sticky;
-	/* padding: 0 48px; */
 }
 
 .logo
@@ -182,6 +181,7 @@ header nav
 	{
 		flex-direction: column;
 		height: fit-content;
+		padding: 16px;
 	}
 
 	header nav
@@ -248,6 +248,11 @@ section:nth-child(odd)
 	width: 80%;
 }
 
+img
+{
+	border-radius: 3px;
+}
+
 figure img
 {
 	border-radius: 3px;
@@ -279,9 +284,41 @@ figcaption
 	box-sizing: border-box;
 }
 
-.section-inner .wrapper .left img
+.section-inner .wrapper .left img, .section-inner .wrapper .right img
 {
 	width: 100%;
+}
+
+table
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+tr
+{
+	border-bottom: 2px dotted var(--dark-gray);
+}
+
+tr:last-of-type
+{
+	border-bottom: none;
+}
+
+th, td
+{
+	padding: 4px 8px;
+}
+
+th
+{
+	color: var(--modern-black);
+	text-align: left;
+}
+
+td
+{
+	text-align: right;
 }
 
 @media (max-width: 1200px)
