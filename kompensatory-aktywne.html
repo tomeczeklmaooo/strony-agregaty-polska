@@ -14,12 +14,16 @@
 	<header>
 		<img src="assets/logo.png" alt="Agregaty Polska" class="logo">
 
-		<nav>
+		<div class="hamburger" onclick="toggle_menu()">
+			☰
+		</div>
+
+		<nav id="nav-menu">
 			<div class="nav-item" onclick="scroll_to_section('#moc-bierna')">Czym jest moc bierna</div>
 			<div class="nav-item" onclick="scroll_to_section('#kompensacja-aktywna')">Kompensacja aktywna</div>
 			<div class="nav-item" onclick="scroll_to_section('#bezpieczenstwo')">Bezpieczeństwo</div>
 			<div class="nav-item" onclick="scroll_to_section('#kontakt')">Kontakt</div>
-			<div class="button-cta">Zadzwoń do nas</div>
+			<div class="button-cta" onclick="window.location.href='tel:+48616656600'">Zadzwoń do nas</div>
 		</nav>
 	</header>
 	<!-- END HEADER SECTION -->
@@ -33,21 +37,33 @@
 				<p><strong>Moc bierna indukcyjna</strong> występuje przy pracy takich urządzeń jak wentylatory, silniki technologiczne, lampy wyładowcze, bez falownikowe generatory wody lodowej czy sprężarki powietrza.</p>
 				<p>W ostatnich latach jednak struktura odbiorników energii elektrycznej uległa zmianie, a coraz więcej nowoczesnych urządzeń generuje <strong>moc bierną pojemnościową</strong>. Dotyczy to przede wszystkim sprzętu wyposażonego w zasilacze impulsowe, bazujące na układach prostownikowych i kondensatorowych. Przykładami takich odbiorników są klimatyzacje inwerterowe (falownikowe), pompy ciepła, zasilacze komputerowe i awaryjne UPS oraz oświetlenie LED.</p>
 				<p>Zarówno moc czynna, jak i moc bierna przepływa przez licznik operatora i jest przez niego zliczana. Bilans mocy biernej mierzony przez licznik zależy od charakterystyki wszystkich odbiorników podłączonych do instalacji odbiorcy i wyraża stosunek generowanej mocy biernej do pobieranej mocy czynnej.</p>
+				<figure>
+					<img src="assets/RYS01 v2-1.webp" alt="Przykładowy schemat blokowy przepływu energii czynnej i biernej w zasilanym obieckie">
+					<figcaption>Rys. 1 Przykładowy schemat blokowy przepływu energii czynnej i biernej w zasilanym obieckie</figcaption>
+				</figure>
 			</div>
 		</section>
 		
 		<section id="kompensacja-aktywna">
 			<div class="section-inner">
 				<h1><span class="underline">Kompensacja</span> aktywna</h1>
-				<div class="section-inner">
-					<div class="wrapper">
-						<div class="left">
-							<img src="assets/kompensator_30kvar.png" alt="Kompensator aktywny mocy biernej Agregaty Polska 30kVar">
-						</div>
-						<div class="right">
-							<p>Intensywnie rozwijane są urządzenia zwane <strong>aktywnymi generatorami mocy biernej</strong>, potocznie nazywane <strong>aktywnymi kompensatorami mocy biernej</strong>. Mimo dużej podaży tego typu urządzeń na rynku ich właściwy dobór oraz zapewnienie prawidłowej pracy w celu eliminacji wysokich kar i opłat wymaga odpowiednich działań i zaawansowanej analizy, którą powinny przeprowadzać osoby posiadające odpowiednie kwalifikacje i doświadczenie.</p>
-							<p><strong>Aktywny kompensator mocy biernej</strong> działa na zasadzie szybkiej analizy parametrów sieci i generowania odpowiedniego sygnału kompensacyjnego. Kompensator na bieżąco monitoruje przepływ energii biernej w sieci. Jeśli wykryje obecność mocy biernej, natychmiast generuje prąd o przeciwnej fazie, co skutecznie ją kompensuje. Urządzenie działa dynamicznie &ndash; eliminuje nadmiarową moc bierną bez opóźnień. W odróżnieniu od pasywnych rozwiązań (np. baterii kondensatorów), nie powoduje przełączeń skokowych i wahań napięcia.</p>
-						</div>
+				<div class="wrapper">
+					<div class="left">
+						<img src="assets/kompensator_30kvar.png" alt="Kompensator aktywny mocy biernej Agregaty Polska 30kVar" style="width: 50%;">
+					</div>
+					<div class="right">
+						<p>Intensywnie rozwijane są urządzenia zwane <strong>aktywnymi generatorami mocy biernej</strong>, potocznie nazywane <strong>aktywnymi kompensatorami mocy biernej</strong>. Mimo dużej podaży tego typu urządzeń na rynku ich właściwy dobór oraz zapewnienie prawidłowej pracy w celu eliminacji wysokich kar i opłat wymaga odpowiednich działań i zaawansowanej analizy, którą powinny przeprowadzać osoby posiadające odpowiednie kwalifikacje i doświadczenie.</p>
+					</div>
+				</div>
+				<div class="wrapper">
+					<div class="left">
+						<figure>
+							<img src="assets/RYS01 v2-1.webp" alt="Przykładowy schemat blokowy przepływu energii czynnej i biernej w zasilanym obieckie">
+							<figcaption>Rys. 1 Przykładowy schemat blokowy przepływu energii czynnej i biernej w zasilanym obieckie</figcaption>
+						</figure>
+					</div>
+					<div class="right">
+						<p><strong>Aktywny kompensator mocy biernej</strong> działa na zasadzie szybkiej analizy parametrów sieci i generowania odpowiedniego sygnału kompensacyjnego. Kompensator na bieżąco monitoruje przepływ energii biernej w sieci. Jeśli wykryje obecność mocy biernej, natychmiast generuje prąd o przeciwnej fazie, co skutecznie ją kompensuje. Urządzenie działa dynamicznie &ndash; eliminuje nadmiarową moc bierną bez opóźnień. W odróżnieniu od pasywnych rozwiązań (np. baterii kondensatorów), nie powoduje przełączeń skokowych i wahań napięcia.</p>
 					</div>
 				</div>
 			</div>
@@ -66,7 +82,7 @@
 				<h1>Napisz do nas</h1>
 				<div class="wrapper">
 					<div class="left">
-						<form method="post">
+						<form method="post" class="contact-form">
 							<input type="text" name="imie-nazwisko" id="imie-nazwisko" placeholder="Imię i nazwisko (opcjonalnie)">
 							<input type="email" name="email" id="email" placeholder="Email*" required>
 							<input type="tel" name="telefon" id="telefon" placeholder="Telefon (opcjonalnie)">
@@ -81,9 +97,9 @@
 										<span></span>
 									</label>
 								</div>
-								<label for="rodo">Wypełniając formularz kontaktowy, godzę się na przetwarzanie moich danych osobowych i kontaktowych na warunkach i zasadach zgodnych z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. tzw. RODO.*</label>
+								<label for="cbx-46">Wypełniając formularz kontaktowy, godzę się na przetwarzanie moich danych osobowych i kontaktowych na warunkach i zasadach zgodnych z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. tzw. RODO.*</label>
 							</div>
-							<input type="submit" value="Wyślij wiadomość">
+							<input type="submit" value="Wyślij wiadomość" class="send-btn">
 						</form>
 					</div>
 					<div class="right">
@@ -93,6 +109,19 @@
 						</iframe>
 					</div>
 				</div>
+			</div>
+
+			<div class="message-sent-modal hidden">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon">
+					<path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+				</svg>
+				<div class="content">
+					<span><strong>Wiadomość wysłana.</strong></span>
+					<span>Skontaktujemy się wkrótce.</span>
+				</div>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" stroke-width="0" fill="none" stroke="currentColor" class="cross-icon">
+					<path fill="currentColor" d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+				</svg>
 			</div>
 		</section>
 	</main>
@@ -142,10 +171,25 @@
 	</footer>
 	<!-- END FOOTER SECTION -->
 
+	<script src="https://kit.fontawesome.com/51fdb09e8d.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+	<script type="text/javascript">
+		(function(){
+		emailjs.init("ttFcYFfEWqrTmnhMX");
+		})();
+	</script>
+
 	<script>
 		function scroll_to_section(selector)
 		{
 			document.querySelector(selector).scrollIntoView(true);
+		}
+
+		function toggle_menu()
+		{
+			const nav = document.querySelector('#nav-menu');
+			nav.classList.toggle('show');
 		}
 	</script>
 </body>
