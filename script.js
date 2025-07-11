@@ -34,3 +34,11 @@ document.querySelector('.contact-form').addEventListener('submit', function(even
 document.querySelector('.cross-icon').addEventListener('click', () => {
 	document.querySelector('.message-sent-modal').classList.toggle('hidden');
 });
+
+//
+// NUMER TELEFONU
+//
+function show_phone_number()
+{
+	document.querySelector('.button-cta').innerHTML = '61 665 66 00';
+}
